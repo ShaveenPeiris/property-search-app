@@ -1,0 +1,281 @@
+.search-form {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.form-group label span {
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+/* React Select Styling */
+.react-select-container {
+  width: 100%;
+}
+
+.react-select__control {
+  font-family: inherit !important;
+  font-size: 1rem !important;
+}
+
+.react-select__menu {
+  z-index: 100 !important;
+}
+
+.react-select__placeholder {
+  color: #a0a0a0 !important;
+}
+
+/* RC Slider Container */
+.slider-container {
+  padding: 2rem 1rem 1rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px solid #e0e6ed;
+  margin-top: 0.5rem;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+/* RC Slider marks styling */
+.rc-slider-mark {
+  top: 30px !important;
+}
+
+.rc-slider-mark-text {
+  color: #6c757d !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+}
+
+.rc-slider-mark-text-active {
+  color: #3d7a5f !important;
+}
+
+/* React DatePicker Styling */
+.date-picker-input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid #e0e6ed;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+  font-family: inherit;
+  color: #2c3e50;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.date-picker-input::placeholder {
+  color: #a0a0a0;
+  font-weight: 400;
+}
+
+.date-picker-input:focus {
+  outline: none;
+  border-color: #3d7a5f;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(61, 122, 95, 0.1);
+}
+
+/* React DatePicker Calendar Styling */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker {
+  font-family: inherit !important;
+  border: 2px solid #3d7a5f !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.react-datepicker__header {
+  background: linear-gradient(135deg, #2c5f4e 0%, #3d7a5f 100%) !important;
+  border-bottom: none !important;
+  border-radius: 10px 10px 0 0 !important;
+  padding: 1rem !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name {
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background: #3d7a5f !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+}
+
+.react-datepicker__day:hover {
+  background: rgba(61, 122, 95, 0.2) !important;
+  border-radius: 8px !important;
+}
+
+.react-datepicker__day--disabled {
+  color: #ccc !important;
+  cursor: not-allowed !important;
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: white !important;
+}
+
+.react-datepicker__navigation:hover *::before {
+  border-color: #e0e0e0 !important;
+}
+
+/* Form Actions */
+.form-actions {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.submit-btn,
+.reset-btn {
+  padding: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #2c5f4e 0%, #3d7a5f 100%);
+  color: white;
+  box-shadow: 0 6px 20px rgba(44, 95, 78, 0.3);
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(44, 95, 78, 0.4);
+}
+
+.reset-btn {
+  background: white;
+  color: #6c757d;
+  border: 2px solid #e0e6ed;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.reset-btn:hover {
+  background: #f8f9fa;
+  border-color: #c0c0c0;
+  color: #2c3e50;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.submit-btn:active,
+.reset-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Accessibility improvements */
+.form-group label:focus-within span {
+  color: #3d7a5f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-form {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  .form-group.full-width {
+    grid-column: span 1;
+  }
+
+  .form-actions {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .submit-btn,
+  .reset-btn {
+    font-size: 1.1rem;
+  }
+
+  .slider-container {
+    padding: 1.5rem 0.8rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-form {
+    padding: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .date-picker-input {
+    padding: 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  .submit-btn,
+  .reset-btn {
+    padding: 1rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .form-group label {
+    font-size: 0.85rem;
+  }
+
+  .slider-container {
+    padding: 1.2rem 0.5rem 0.5rem;
+  }
+
+  .slider-labels {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+}

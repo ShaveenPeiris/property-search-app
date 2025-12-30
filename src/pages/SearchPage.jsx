@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SearchForm from "../components/SearchForm";
 import "../styles/SearchPage.css";
 
 export default function SearchPage() {
@@ -32,7 +33,10 @@ export default function SearchPage() {
         <section className="hero-section">
           <h1>Find Your Dream Property</h1>
         </section>
-
+        {/* Search Form Section */}
+        <div className="search-layout">
+          <SearchForm onSearch={handleSearch} />
+        </div>
       </div>
 
       <Footer />
