@@ -3,6 +3,7 @@ import { useState } from "react";
 import HomePage from "./pages/HomePage";
 import SearchPage from "./pages/SearchPage";
 import ResultPage from "./pages/ResultPage";
+import PropertyPage from "./pages/PropertyPage";
 import './styles/App.css';
 
 function App() {
@@ -31,6 +32,15 @@ function App() {
               favourites={favourites}
               addFavourite={addFavourite}
               removeFavourite={removeFavourite}
+            />
+          } 
+        />
+        <Route 
+          path="/property/:id" 
+          element={
+            <PropertyPage 
+              favourites={favourites}
+              addFavourite={addFavourite} 
             />
           } 
         />

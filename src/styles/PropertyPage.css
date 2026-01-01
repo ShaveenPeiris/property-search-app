@@ -1,0 +1,281 @@
+/* Page wrapper */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.property-page {
+  flex: 1;
+  width: 100%;
+  background: #f5f5f5;
+  padding-top: 70px;
+}
+
+.property-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  width: 100%;
+}
+
+.property-header {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.property-header h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.property-header p {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #27ae60;
+  margin: 0 0 1.5rem 0;
+}
+
+.property-meta-info {
+  display: flex;
+  gap: 3rem;
+  font-size: 1.2rem;
+  color: #6c757d;
+  flex-wrap: wrap;
+}
+
+.property-meta-info span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.property-page > button,
+.property-header > button {
+  background: linear-gradient(135deg, #2c5f4e 0%, #3d7a5f 100%);
+  color: white;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(44, 95, 78, 0.3);
+  cursor: pointer;
+}
+
+.property-page > button:hover,
+.property-header > button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(44, 95, 78, 0.4);
+}
+
+.property-content {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+/* TABS STYLING */
+.react-tabs {
+  width: 100%;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 3px solid #e0e0e0;
+  margin: 0 0 2rem 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.react-tabs__tab {
+  padding: 1rem 2rem;
+  border: none;
+  background: transparent;
+  color: #6c757d;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -3px;
+  border-radius: 8px 8px 0 0;
+}
+
+.react-tabs__tab:hover {
+  background: rgba(44, 95, 78, 0.05);
+  color: #2c5f4e;
+}
+
+.react-tabs__tab--selected {
+  background: transparent;
+  color: #2c5f4e;
+  border-bottom-color: #2c5f4e;
+  font-weight: 700;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+  padding: 1rem 0;
+  min-height: 400px;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.react-tabs__tab-panel p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2c3e50;
+  margin: 0;
+}
+
+/* FLOOR PLAN IMAGE */
+.react-tabs__tab-panel img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+}
+
+/* MAP IFRAME */
+.react-tabs__tab-panel iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .property-page {
+    padding-top: 60px;
+  }
+
+  .property-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .property-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .property-header p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .property-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .property-header {
+    padding: 2rem;
+  }
+
+  .property-header h1 {
+    font-size: 2rem;
+  }
+
+  .property-header p {
+    font-size: 1.8rem;
+  }
+
+  .property-meta-info {
+    gap: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .property-content {
+    padding: 2rem;
+  }
+
+  .react-tabs__tab {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .react-tabs__tab-panel {
+    min-height: 300px;
+  }
+
+  .react-tabs__tab-panel iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .property-container {
+    padding: 1rem;
+  }
+
+  .property-header {
+    padding: 1.5rem;
+  }
+
+  .property-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .property-header p {
+    font-size: 1.5rem;
+  }
+
+  .property-meta-info {
+    gap: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .property-content {
+    padding: 1.5rem;
+  }
+
+  .react-tabs__tab-list {
+    gap: 0.5rem;
+  }
+
+  .react-tabs__tab {
+    padding: 0.7rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .react-tabs__tab-panel p {
+    font-size: 1rem;
+  }
+
+  .react-tabs__tab-panel iframe {
+    height: 300px;
+  }
+}
