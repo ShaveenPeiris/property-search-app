@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import SearchPage from "./pages/SearchPage";
 import ResultPage from "./pages/ResultPage";
 import PropertyPage from "./pages/PropertyPage";
+import AboutPage from "./pages/AboutPage";
 import './styles/App.css';
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             />
           } 
         />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </BrowserRouter>
   );
