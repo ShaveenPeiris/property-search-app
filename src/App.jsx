@@ -5,6 +5,7 @@ import SearchPage from "./pages/SearchPage";
 import ResultPage from "./pages/ResultPage";
 import PropertyPage from "./pages/PropertyPage";
 import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 import './styles/App.css';
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           } 
         />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} /> 
       </Routes>
     </BrowserRouter>
   );
