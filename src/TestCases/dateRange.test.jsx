@@ -32,7 +32,7 @@ describe('SearchForm - Date Range Filters', () => {
     expect(callArgs.dateFrom).toBeTruthy();
     expect(callArgs.dateTo).toBeTruthy();
     
-    // Check that the dates contain 2024 (accounting for timezone issues)
+    // Check that the dates contain 2024 
     expect(callArgs.dateFrom).toMatch(/2023-12-31|2024-01-01/);
     expect(callArgs.dateTo).toMatch(/2024-12-30|2024-12-31/);
   });
