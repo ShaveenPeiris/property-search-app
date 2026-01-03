@@ -103,6 +103,8 @@
   -webkit-line-clamp: 2;
   line-clamp: 2;
   -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* DESCRIPTION  */
@@ -238,6 +240,7 @@
   }
 }
 
+
 @media (max-width: 480px) {
   .property-card {
     height: 520px;
@@ -264,26 +267,53 @@
   }
 
   .property-details h3 {
-    font-size: 1.2rem;
-    height: 3.12rem;
+    font-size: 1.15rem;
+    height: auto;
+    min-height: 2.99rem;
+    max-height: 2.99rem;
+    line-height: 1.3;
     -webkit-line-clamp: 2;
     line-clamp: 2;
+    margin-bottom: 0.8rem;
   }
 
   .property-description {
     font-size: 0.95rem;
     height: 2.85rem;
+    line-height: 1.5;
     -webkit-line-clamp: 2;
     line-clamp: 2;
   }
 
   .property-price {
     font-size: 1.4rem;
+    height: 2rem;
+  }
+
+  .property-meta {
+    gap: 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .property-meta span {
+    font-size: 0.95rem;
   }
 
   .view-btn,
   .favourite-action-btn {
     padding: 0.85rem;
     font-size: 0.95rem;
+  }
+}
+
+/* Extra small devices - iPhone SE specifically */
+@media (max-width: 375px) {
+  .property-details h3 {
+    font-size: 1.1rem;
+    line-height: 1.25;
+  }
+  
+  .property-description {
+    font-size: 0.9rem;
   }
 }
