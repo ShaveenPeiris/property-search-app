@@ -69,7 +69,7 @@ export default function PropertyPage({ addFavourite, favourites = [] }) {
           {/* Tabs */}
           <div className="property-content">
             <PropertyTabs
-              description={property.description || property.shortDescription}
+              description={property.description || property.Description}
               floorPlan={property.floorPlan}
               lat={property.lat || 51.5074}
               lng={property.lng || -0.1278}

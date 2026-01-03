@@ -7,8 +7,7 @@
     "bedrooms": 3,
     "dateAdded": "2022-10-12",
     "postcode": "BR1",
-    "shortDescription": "A modern 4-bedroom family home with garden.",
-    "longDescription": "This beautifully presented family home offers spacious living areas, a private garden, and modern interiors.",
+    "Description": "A stylish and modern family home featuring spacious living areas, three comfortable bedrooms, and a beautifully kept private garden. Perfect for families looking for a peaceful lifestyle while staying close to local amenities and transport links.",
      "images": [
     "/image/prop1/main.jpg",
     "/image/prop1/img1.jpg",
@@ -28,8 +27,7 @@
     "bedrooms": 2,
     "dateAdded": "2022-09-14",
     "postcode": "NW1",
-    "shortDescription": "Stylish flat in the heart of the city.",
-    "longDescription": "A contemporary apartment ideal for professionals, close to transport and amenities.",
+    "Description": "A contemporary city apartment located right in the heart of the action. This two-bedroom flat offers bright open-plan living, modern interiors, and excellent access to shops, restaurants, and public transport — ideal for professionals or commuters.",
      "images": [
     "/image/prop2/main.jpg",
     "/image/prop2/img1.jpg",
@@ -49,8 +47,7 @@
     "bedrooms": 3,
     "dateAdded": "2023-12-10",
     "postcode": "KT3",
-    "shortDescription": "Luxury villa with premium features.",
-    "longDescription": "An exclusive detached villa offering luxury finishes, landscaped gardens and private parking.",
+    "Description": "An elegant detached villa designed for luxury living. This stunning property offers premium finishes, landscaped gardens, generous living space, and private parking — perfect for buyers seeking comfort, privacy, and style.",
     "images": [
     "/image/prop3/main.jpg",
     "/image/prop3/img1.jpg",
@@ -70,8 +67,7 @@
     "bedrooms": 1,
     "dateAdded": "2024-03-05",
     "postcode": "SE1",
-    "shortDescription": "Perfect first home or investment.",
-    "longDescription": "Compact and affordable flat located close to public transport.",
+    "Description": "A compact and budget-friendly one-bedroom flat — the perfect first home or investment opportunity. Conveniently located near public transport and local services, offering simple, low-maintenance living.",
      "images": [
     "/image/prop4/main.jpg",
     "/image/prop4/img1.jpg",
@@ -91,8 +87,7 @@
     "bedrooms": 3,
     "dateAdded": "2024-01-30",
     "postcode": "HA2",
-    "shortDescription": "Spacious townhouse in quiet suburb.",
-    "longDescription": "Ideal family home located in a peaceful residential area.",
+    "Description": "A spacious three-bedroom townhouse set in a quiet suburban neighborhood. With comfortable living spaces and a welcoming atmosphere, this property is ideal for families looking for a calm and friendly residential area.",
      "images": [
     "/image/prop5/main.jpg",
     "/image/prop5/img1.jpg",
@@ -112,8 +107,7 @@
     "bedrooms": 3,
     "dateAdded": "2023-11-18",
     "postcode": "E14",
-    "shortDescription": "Luxury penthouse with skyline views.",
-    "longDescription": "Stunning penthouse apartment with panoramic views and high-end finishes.",
+    "Description": "A luxury penthouse apartment boasting impressive skyline views. Featuring premium finishes, bright open-plan living, and panoramic windows — ideal for buyers seeking sophisticated city living with a touch of exclusivity.",
     "images": [
     "/image/prop6/main.jpg",
     "/image/prop6/img1.jpg",
@@ -133,8 +127,7 @@
     "bedrooms": 2,
     "dateAdded": "2024-02-01",
     "postcode": "RH5",
-    "shortDescription": "Charming countryside retreat.",
-    "longDescription": "A picturesque cottage offering tranquil rural living.",
+    "Description": "A charming two-bedroom cottage surrounded by peaceful countryside. Perfect for anyone seeking relaxation, natural surroundings, and a slower pace of life, while still being within reach of essential amenities.",
     "images": [
     "/image/prop7/main.jpg",
     "/image/prop7/img1.jpg",
